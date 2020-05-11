@@ -7,13 +7,21 @@
 
 # How and Why You Should Avoid CORS in Single Page Apps
 
+# 如何且为何要在单页应用中防止跨域资源共享 
+
 Over the past decade, Single Page Apps have become the norm technology to build web apps. Today, frameworks like Angular, React, and Vue dominate the frontend development, providing the underlying platform for these apps. The good news is, it serves the frontend and backend APIs from a single domain. But there are instances, where we serve frontend (e.g., web.myapp.com) and backend (e.g., api.myapp.com) from separate sub-domains. Sometimes, we allow cross-origin access at the backend API for the development environment only.
+
+在过去的十年中，单页应用变成了开发一个 web 应用的常规技术手段。如今的一些框架，比如 Angular，React 和 Vue统治着前端开发的领域，它们为这些 web 应用提供了底层的平台。好消息是，他们从。但是某些情况下，我们提供前端 ( 例如 web.myapp.com ) 和后端 ( 例如 api.myapp.com )从不同的子域名。某些时候，我们会仅在开发环境下的后端 API 里允许跨域访问。
 
 ![](https://cdn-images-1.medium.com/max/12500/1*TKYFiZnIhfHi_PAFcG0geg.jpeg)
 
 [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) (CORS) is a mechanism implemented in web browsers to allow or deny requests coming from a different domain to your web app. With CORS, web browsers and web servers agree on a standard protocol to understand whether the resources are allowed to access or not. So remember, implementing CORS doesn’t mean that Bots or any other mechanism can’t access your server resources.
 
+[跨域资源共享](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) (CORS) 是一种在浏览器中的实施机制来同意或拒绝某些从不同域名发出的请求。有了跨域资源共享，浏览器和服务器。所以记住了，实现了跨域资源共享并不意味着某些爬虫机器人或者其它的实施机制不能访问你的服务器资源。
+
 ## Do you need CORS?
+
+## 你需要跨域资源共享吗？
 
 But do we need to allow CORS for your web apps? I would say for most of the cases; you don’t need to worry about CORS. However, there could be special features like allowing to embed a page (e.g., Form, Video) outside your main web app, where you might consider enabling CORS. Still, you can enable CORS scoped to that particular feature.
 
